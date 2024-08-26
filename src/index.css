@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 46);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+nav .btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav .btn:hover {
+  background-color: #005bb5;
+}
+
+.chart-container {
+  margin-top: 30px;
+  height: 400px;
+}
+
+@media screen and (max-width: 600px) {
+  .chart-container {
+    height: 300px;
+  }
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(3, 3, 33);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  font-size: 1.01rem;
+  color: greenyellow;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.firstSection>div {
+  width: 30%;
+}
+
+.leftSection {
+  font-size: 2.9rem;
+}
+
+.leftSection .buttons {
+  padding: 30px;
+}
+
+.leftSection .btn {
+  border: 2px solid greenyellow;
+  padding: 12px;
+  color: white;
+  background-color: black;
+  font-size: 18px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.leftSection .btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.rightSection img {
+  width: 80%;
+
+}
+
+.name {
+  /* color: rgb(162, 85, 234); */
+  color: greenyellow;
+}
+
+#element {
+  color: greenyellow;
+}
+
+.text-gray {
+  color: gray;
+}
+
+main hr {
+  border: 0px;
+  background: lavender;
+  margin: 0 80px;
+  height: 1px;
+  margin-bottom: 10px;
+}
+
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+}
+
+.secondSection h1 {
+  font-size: 1.7rem;
+}
+
+.secondSection .box {
+  background: white;
+  height: 2px;
+  margin: 56px 56px;
+  display: flex;
+
+}
+
+.secondSection .vertical {
+  height: 93px;
+  width: 1px;
+  background-color: greenyellow;
+  margin: 0 12vw;
+}
+
+.image-top {
+  width: 60px;
+  position: relative;
+  top: -47px;
+  display: block;
+  height: 40%;
+  left: -25px;
+}
+
+.vertical-title {
+  position: relative;
+  top: 56px;
+  width: 180px;
+  font-size: 1.1rem;
+  left: -62px;
+
+}
+
+.vertical-desc {
+  position: relative;
+  top: 60px;
+  left: -62px;
+  width: 180px;
+  color: grey;
+  font-size: 12px;
+}
+
+.vertical-tools {
+  font-size: 10px;
+  color: cyan;
+  position: relative;
+  top: 70px;
+  left: -62px;
+  width: 180px;
+}
+
+footer {
+  background-color: rgb(8, 8, 62);
+}
+
+.footer {
+  display: flex;
+  padding: 24px 120px;
+  justify-content: space-evenly;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-second ul li a {
+  text-decoration: none;
+  color: greenyellow;
+}
+
+.footer-second ul li a:hover {
+  color: white;
+}
+
+.footer-third ul li a {
+  text-decoration: none;
+  color: greenyellow;
+}
+
+.footer-third ul li a:hover {
+
+  color: white;
+}
+
+.footer>div {
+  width: 196px;
+}
+
+footer .rights {
+  color: gray;
+  position: relative;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.aboutme {
+  margin: 80px 120px;
+  text-align: justify;
+  display: grid;
+}
+
+.aboutme .about-desc {
+  margin: 20px 30px;
+}
+
+.aboutme .about-desc .about-desc-list {
+  margin: 0 30px;
+}
+
+.aboutme .achievements {
+  margin: 20px 30px;
+}
+
+.aboutme .achievements .achievements-list {
+  margin: 0 30px;
+
+}
+
+@media screen and (max-width: 1350px) {
+  .firstSection {
+      flex-direction: column-reverse;
+  }
+
+ .secondSection>span  {
+  text-align: center;
+  display: flow;
+ }
+ .secondSection>h1 {
+  text-align: center;
+ }
+ body{
+  min-width: fit-content;
+ }
+ .footer{
+  display: none;
+ }
+
+  nav {
+      flex-direction: column;
+      /* font-size: 1.8vw; */
+  }
+  nav .left{
+      /* font-size: 1.8vw; */
+  }
+
+  .firstSection {
+      left: 30px !important;
+      right: 30px !important;
+  }
+
+  .leftSection {
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 100% !important;
+      display: flex;
+      font-size: 4vw;
+      flex-direction: column;
+  }
+
+  .rightSection img {
+      width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+  .box {
+      flex-direction: column;
+  }
+  nav {
+      flex-direction: column;
+      /* font-size: 1.8vw; */
+  }
+
+  .secondSection .box {
+      width: 50vw;
+  }
+
+  .secondSection .vertical {
+      height: unset;
+      position: relative;
+      left: -8vw;
+  }
+
+  .image-top {
+      top: auto;
+      left: -4vw;
+  }
+
+  .vertical-title {
+      top: -63px;
+      left: 45px;
+  }
+
+  .vertical-desc {
+      top: -63px;
+      left: 45px;
+  }
+
+  .vertical-tools {
+      top: -63px;
+      left: 45px;
+  }
+
+}
