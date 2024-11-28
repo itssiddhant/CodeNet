@@ -51,6 +51,7 @@ function UsernameInput() {
         value={username.github}
         onChange={handleChange}
         placeholder="Enter your GitHub username"
+        className='text-black'
       />
       <button type="button" className="btn btn-primary" onClick={handleSubmit}>
         View Profile
@@ -75,7 +76,7 @@ function UsernameInput() {
               ],
             }}
             options={{ maintainAspectRatio: false }}
-            />
+          />
         </div>
       )}
 
@@ -105,16 +106,34 @@ function UsernameInput() {
       )}
 
       {profileData.github && (
-        <div className="github-profile">
-          <h3>GitHub Profile</h3>
-          <p>Username: {profileData.github.login}</p>
-          <p>Public Repos: {profileData.github.public_repos}</p>
-          <p>Followers: {profileData.github.followers}</p>
-          <p>Following: {profileData.github.following}</p>
-          <p>Bio: {profileData.github.bio || 'N/A'}</p>
+        <div className="github-profile card p-4 mt-4 text-black">
+          <h3 className="text-xl font-bold mb-4 text-black">GitHub Profile</h3>
+          <div className="grid grid-cols-2 gap-4">
+          <div>
+              <p className="font-semibold text-black">Username:</p>
+              <p className="text-black">{profileData.github.login}</p>
+            </div>
+            <div>
+              <p className="font-semibold text-black">Public Repos:</p>
+              <p className="text-black">{profileData.github.public_repos}</p>
+            </div>
+            <div>
+              <p className="font-semibold text-black">Followers:</p>
+              <p className="text-black">{profileData.github.followers}</p>
+            </div>
+            <div>
+              <p className="font-semibold text-black">Following:</p>
+              <p className="text-black">{profileData.github.following}</p>
+            </div>
+          </div>
+          {profileData.github.bio && (
+            <div className="mt-4">
+              <p className="font-semibold text-black">Bio:</p>
+              <p className="text-black">{profileData.github.bio}</p>
+            </div>
+          )}
         </div>
       )}
-      
     </div>
   );
 }

@@ -9,14 +9,19 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "add": "^2.0.6",
+    "alert": "^6.0.2",
     "axios": "^1.7.5",
     "bootstrap": "^5.3.3",
+    "card": "^2.5.4",
     "chart.js": "^4.4.4",
+    "lucide-react": "^0.462.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "shadcn": "^2.1.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -42,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
   }
 }
