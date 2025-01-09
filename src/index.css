@@ -33,6 +33,9 @@ nav .btn:hover {
   margin-top: 30px;
   height: 400px;
 }
+.github-profile{
+  margin-top: 50px;
+}
 
 @media screen and (max-width: 600px) {
   .chart-container {

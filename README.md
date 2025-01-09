@@ -4,6 +4,15 @@
 
 The CodeNet is a web application that allows users to view and compare their coding profiles across multiple platforms, including LeetCode, GitHub, and GeeksforGeeks. Users can analyze their performance, compare different profiles, and visualize their achievements through various charts and graphs.
 
+## Screenshot
+
+There are two views, Personal Profile View and Comparing View.
+This is the Profile View
+![Profile View](profile.png)
+
+This is Comparing View
+![Compare View](compare.png)
+
 ## Features
 
 - **Personal Profile View**: Displays detailed statistics and visualizations for a single profile from LeetCode, including solved vs. total questions for easy, medium, and hard levels.
